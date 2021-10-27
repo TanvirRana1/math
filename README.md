@@ -208,7 +208,7 @@ WELCOME TO TANVIR's WEBSITE
 
 <form> 
 
-<pre style="color:red;width:100%">
+<pre>
 
 ENTER YOUR NAME    : <input type="text"/>
 
