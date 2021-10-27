@@ -159,7 +159,7 @@ padding:1px;
 
 <li active><a href="/">HOME</a></li>
 
-<li active><a href="/index.html">ABOUT</a></li>
+<li active><a href="#">ABOUT</a></li>
 
 <li active><a href="#">SERVICE</a></li>
 
@@ -208,7 +208,7 @@ WELCOME TO TANVIR's WEBSITE
 
 <form> 
 
-<pre style="color:white;width:100%">
+<pre style="color:red;width:100%">
 
 ENTER YOUR NAME    : <input type="text"/>
 
