@@ -13,74 +13,122 @@
 <title>TANVIR.MATH</title> 
 
 <style>
-
-body{
-
-background:black;
-
+*{
+margin:0;
+padding:0;
+}
+.logo{
+width:20%;
+display: flex;
+justify-content: center;
+}
+.logo img{
+width: 35%;
+border: 3px solid gray;
+border-radius:130px;
 }
 
 .navbar{
-
-background-color:gray;
-
-border-radius: 50px;
-
+display: flex;
+align-items: center;
+justify-content: center;
+position: sticky;
+top:0;
+cursor: pointer;
+width:98%;
+border:2px solid gray;
+margin:2px 6px;
+border-radius:12px;
+background: none;
 }
 
-.navbar ul{
-
-overflow: auto;
-
+.leftnav{
+width: 60%;
+display: flex;
+align-items: center;
 }
-
-.navbar li{
-
-float:left;
-
+.leftnav li{
 list-style: none;
-
-margin: 15px 15px;
-
+padding:11px 8px;
 }
-
-
-.navbar li a{
-
-padding: 3px 3px;
-
-text-decoration: none;
-
+.leftnav li a{
 color: white;
-
+text-decoration:none; 
+font-size:16px;
+font-family:'ubuntu', sans-serif;
+}
+.leftnav li a:hover{
+color: gray;
 }
 
-.navbar li a:hover{
-
-color:black
-
+.rightnav{
+width:40%;
+display:flex;
+text-align: right;
+}
+#search{
+padding: 5px;
+font-size: 17px;
+border: 2px solid gray;
+border-radius: 9px;
 }
 
-.search{
-
-float: right;
-
-color:white;
-
-padding:10px 50px;
-
+.background{
+background: rgba(0, 0, 0, 0.7%) url('https://images.unsplash.com/photo-1512850183-6d7990f42385?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1287&q=80');
+background-size: cover;
+background-blend-mode: darken;
+}
+.box-main{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+max-width:70%;
+margin: auto;
+height:85%;
+}
+.firstsection{
+height: 65vh;
+}
+.firsthalf{
+width:86%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.secondhalf{
+width: 33%;
+}
+.secondhalf img{
+width: 100%;
+border:4px solid gray;
+display: block;
+margin: auto;
+border-radius: 60%
+}
+.big-text{
+font-size:30px;
+font-family:'ubuntu', sans-serif;
+}
+.small-text{
+font-size:16px;
+font-family:'ubuntu', sans-serif;
+}
+.btn{
+padding:8px 20px;
+border:2px solid white;
+margin:8px 3px;
+border-radius:6px;
+background: none;
+color: white;
+cursor: pointer;
+}
+.btn-sm{
+padding:5px 7px;
+vertical-align: middle;
 }
 
 
-.navbar input{
-
-border:2px solid black;
-
-border-radius:20px;
-
-padding:5px 20px;
-
-}
 
 .link li{
 
@@ -127,23 +175,24 @@ border:1px solid maroon;
 
 border:4px solid purple;
 
-background:.;
+background:
 
 }
 
 .image img{
-
 border:3px solid yellow;
-
-width:90%;
-
-margin:5px 38px;
-
-padding:1px;
-
+width:80%;
+justify-content: center:
+align-items:center;
+margin:10px 70px;
 }
-
-
+#submit{
+border: 2px solid black;
+background:none;
+color:black;
+border-radius: 4px;
+padding:3px 8px;
+}
 </style>
 
 
@@ -151,94 +200,51 @@ padding:1px;
 
 <body>
 
-<header>
 
-<nav class="navbar"> 
+    <nav class="navbar background">
+          <ul class="leftnav">
+                <div class="logo"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFH94UfQZBJ-fugfNPwENKF_09inaOc8w_w&usqp=CAU" alt="logo"></div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#math">Math</a></li>
+                <li><a href="https://www.facebook.com/tanvir.rana.18488">Contact Me</a></li>
+          </ul>
+          <div class="rightnav">
+             <input type="text" name="search" id="search">
+              <button class="btn btn-sm">Search</button>
+   </nav>
+<section class="background firstsection">
+   <div class="box-main">
+        <div class="firsthalf">
+             <p class="big-text">Welocme to Tanvir's Website!<p>
+             <p class="small-text">Practice website with html css java script. Practice on How to add navigation bar which will be responsive and sticky.</p>
+            <div class="button">
+              <button class="btn">Subscribe</button>
+              <button class="btn">Math</button>
+              
+         </div>
+       </div>
+        <div class="secondhalf">
+       <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFH94UfQZBJ-fugfNPwENKF_09inaOc8w_w&usqp=CAU" alt="TR">
+       </div>
+    </div>
+  </section>
 
-<ul>
-
-<li active><a href="/">HOME</a></li>
-
-<li active><a href="#">ABOUT</a></li>
-
-<li active><a href="#">SERVICE</a></li>
-
-<li><a href="#">CONTACT</a></li>
-
-
-<div class="search">
-
-<input type="text" name="search" id="search" placeholder="Search This website">
-
-</div>
-
-</ul>
-
-</nav> 
-
-</header> 
 
 
 <div class="link">
 
 
-<h1 style="color:purple;text-align:center">
-
-WELCOME TO TANVIR's WEBSITE
-
-</h1>
-
-
 <ul style="list-style:none">
 
-<li><a style="color:red" href="https://www.youtube.com">YOUTUBE</a></li>
+<li><a style="color:gray" href="https://www.youtube.com">YOUTUBE</a></li>
 
-<li><a sttylhref="https://www.facebook.com">FACEBOOK</a></li>
-
-<li><a style="color:yellow" href="https://www.facebook.com/tanvir.rana.18488">MY FACEBOOK PROFILE</a></li>
+<li><a style="color:gray" href="https://www.facebook.com">FACEBOOK</a></li>
 
 </ul>
 
 
 </div>
-
-
-
-<div>
-
-<form> 
-
-<pre>
-
-ENTER YOUR NAME    : <input type="text"/>
-
-<br><br>
-
-ENTER YOUR EMAIL   : <input type="email"/>
-
-<br><br>
-
-ENTER YOUR PASSWORD: <input type="text"/>
-
-<br>
-
-<button type="submit">SUBMIT</button>
-
-</pre>
-
-</form>
-
-</div>
-
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
 
 
 
@@ -354,9 +360,36 @@ ENTER YOUR PASSWORD: <input type="text"/>
 </div>
 
 
+<div>
+
+<form> 
+
+<pre style="color:black;width:80%; border: 2px solid gray; margin:10px 60px;align-items:center;justify-content: center;padding:20px">
+
+ENTER YOUR NAME    : <input type="text"/>
+
+<br><br>
+
+ENTER YOUR EMAIL   : <input type="email"/>
+
+<br><br>
+
+ENTER YOUR PASSWORD: <input type="text"/>
+
+<br>
+
+<button type="submit" id="submit">SUBMIT</button>
+
+</pre>
+
+</form>
+
+</div>
 <br>
 
 <br>
+
+
 
 <img width="100%" src="https://images.unsplash.com/photo-1592326871020-04f58c1a52f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80"/>
 
@@ -370,36 +403,41 @@ ENTER YOUR PASSWORD: <input type="text"/>
 
 <br>
 
+<div id="math">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <h1 style="color:purple;text-align:center">GENERAL MATH CHAPTER 16.1</h1>
-
-
 <div class="image">
+<img  src="https://images.unsplash.com/photo-1635014962632-b4f65f916a58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635014962632-b4f65f916a58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635015255926-03ca533bd9b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635015255926-03ca533bd9b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635044074985-48a4588b3910?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635044074985-48a4588b3910?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635015256394-5961f9121dd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635015256394-5961f9121dd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635178802225-19dd0d3c279e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635178802225-19dd0d3c279e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180864028-dc771f6e2301?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635180864028-dc771f6e2301?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180962721-3c9ca5cc7b94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635180962721-3c9ca5cc7b94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180961422-477e989c0260?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635180961422-477e989c0260?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180961053-d8b8362be65e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635180961053-d8b8362be65e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180961112-48105eed96e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635180961112-48105eed96e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180960407-85a75aeb7595?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635180960407-85a75aeb7595?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180960515-7df3fdd1d831?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
-<img width="100%" src="https://images.unsplash.com/photo-1635180960515-7df3fdd1d831?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
-
-<img width="100%" src="https://images.unsplash.com/photo-1635180963388-4f7a1be2e3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635180963388-4f7a1be2e3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
 <img width="100%" src="Math29.jpg">
 
@@ -407,19 +445,19 @@ ENTER YOUR PASSWORD: <input type="text"/>
 
 <img width="100%" src="Math27.jpg">
 
-<img width="100%" src="https://images.unsplash.com/photo-1635221847054-d55359c8e117?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
+<img  src="https://images.unsplash.com/photo-1635221847054-d55359c8e117?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"/>
 
+<img  src="https://images.unsplash.com/photo-1635328042323-50bc8949719d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80">
+<img  src="https://images.unsplash.com/photo-1635328042308-5e71e07c6195?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80">
+<img  src="https://images.unsplash.com/photo-1635328042314-d2b9fa807ede?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80">
 <img width="100%" src="https://images.unsplash.com/photo-1635328042323-50bc8949719d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80">
-<img width="100%" src="https://images.unsplash.com/photo-1635328042308-5e71e07c6195?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80">
-<img width="100%" src="https://images.unsplash.com/photo-1635328042314-d2b9fa807ede?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80">
-<img width="100%" src="https://images.unsplash.com/photo-1635328042323-50bc8949719d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80">
-<img width="100%" src="https://images.unsplash.com/photo-1635328042308-5e71e07c6195?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80">
+<img  src="https://images.unsplash.com/photo-1635328042308-5e71e07c6195?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80">
 
 
 
 </div>
 
-
+</div>
 
 </body>
 
