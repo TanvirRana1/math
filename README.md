@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+
 
 <html lang="en"> 
 
@@ -461,6 +461,6 @@ ENTER YOUR PASSWORD: <input type="text"/>
 
 </body>
 
-</html>
+
 
 
